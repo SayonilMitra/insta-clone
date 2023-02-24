@@ -15,7 +15,6 @@ app.get('/test', cors(), (req, res) => {
 
 app.get('/posts', cors(), (req, res) => {
     async function fetchPosts() {
-        res.write('/posts working')
         let postList = await userModel.find()
         res.end(JSON.stringify(postList))
     }
