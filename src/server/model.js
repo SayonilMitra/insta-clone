@@ -18,7 +18,7 @@ const userSchema = mongoose.Schema({
 const userModel = mongoose.model('instaclone', userSchema)
 
 mongoose.connect(dbLink, () => {
-    console.log('database connected')
+    console.log('database connected at' + dbLink)
 }
 )
 
