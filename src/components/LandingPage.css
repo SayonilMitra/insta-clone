@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container > * {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.landing-page-image img {
+  max-height: 700px;
+}
+
+.landing-page-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: #006238;
+}
+
+.enter-link {
+  border: 3px solid #006238;
+  border-radius: 16px;
+  padding: 5px 15px 5px 15px;
+  margin-top: 15px;
+}
+
+a:any-link {
+  text-decoration: none;
+  color: #006238;
+}
