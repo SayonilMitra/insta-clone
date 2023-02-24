@@ -4,6 +4,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 const dbLink = process.env.mongo_url
 
+
 mongoose.set('strictQuery', true);
 
 const userSchema = mongoose.Schema({
@@ -18,7 +19,7 @@ const userSchema = mongoose.Schema({
 const userModel = mongoose.model('instaclone', userSchema)
 
 mongoose.connect(dbLink, () => {
-    console.log('database connected')
+    console.log('database connected at ' + dbLink)
 }
 )
 

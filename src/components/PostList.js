@@ -2,7 +2,7 @@ import PostItem from "./PostItem"
 
 function PostList({ postList }) {
     return <ul>
-        {postList.map((item, index) => {
+        {postList.length === 0 ? "Loading..." : postList.map((item, index) => {
             return <li key={index}>
                 <PostItem postItem={item} />
             </li>
