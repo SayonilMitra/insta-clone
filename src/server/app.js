@@ -27,8 +27,8 @@ app.post('/upload', (req, res) => {
     res.end()
 })
 
-app.listen(port, () => {
+/* app.listen(port, () => {
     console.log('Backend running')
-})
+}) */
 
 module.exports = app
