@@ -8,7 +8,7 @@ function PostView() {
     let [postList, setPostList] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:8000/posts', {
+        fetch('https://insta-clone-sayo-back-end.onrender.com/posts', {
             headers: {
                 "Access-Control-Allow-Origin": "*",
             }

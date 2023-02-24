@@ -4,6 +4,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 const dbLink = process.env.mongo_url
 
+
 mongoose.set('strictQuery', true);
 
 const userSchema = mongoose.Schema({

@@ -26,7 +26,7 @@ function UploadForm() {
             "likes": 0
         }
 
-        fetch('http://localhost:8000/upload', {
+        fetch('https://insta-clone-sayo-back-end.onrender.com/upload', {
             method: 'POST',
             body: JSON.stringify(postObject),
             headers: {
