@@ -14,25 +14,21 @@ app.get('/test', cors(), (req, res) => {
 })
 
 app.get('/posts', cors(), (req, res) => {
-    console.log('get posts request recieved')
-    res.end('/posts working')
-    /* async function fetchPosts() {
+    async function fetchPosts() {
+        res.write('/posts working')
         let postList = await userModel.find()
-        console.log('posts data recieved from db')
         res.end(JSON.stringify(postList))
     }
 
-    fetchPosts() */
+    fetchPosts()
 })
 
 app.post('/upload', (req, res) => {
-    console.log('post upload request recieved')
     let postInfo = req.body
 
     async function uploadPost() {
         let newPost = new userModel(postInfo)
         await newPost.save()
-        console.log('data saved in db')
         res.end()
     }
     uploadPost()
