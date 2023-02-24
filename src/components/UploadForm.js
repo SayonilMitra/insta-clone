@@ -10,7 +10,7 @@ function UploadForm() {
     let [description, setDescription] = useState('')
 
     function postImage(event) {
-        event.preventDefault()
+        // event.preventDefault()
 
         const monthNames = ["January", "February", "March", "April", "May", "June",
             "July", "August", "September", "October", "November", "December"
@@ -48,7 +48,7 @@ function UploadForm() {
 
     return <>
         <Header />
-        <form className="upload-form">
+        <form className="upload-form" action='/postview'>
             <div className="upload-form-row">
                 <input type='file' onChange={(e) => convertImage(e)} />
             </div>
