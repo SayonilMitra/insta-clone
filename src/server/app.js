@@ -9,6 +9,10 @@ const port = 8000
 app.use(cors())
 app.use(express.json({ limit: '50mb' }))
 
+app.get('/test', cors(), (req, res) => {
+    res.end('test page working')
+})
+
 app.get('/posts', cors(), (req, res) => {
 
     async function fetchPosts() {
